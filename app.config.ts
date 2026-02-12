@@ -26,6 +26,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   plugins: [
     'expo-router',
     'expo-font',
+    '@react-native-community/datetimepicker',
     ...(process.env.EXPO_PLATFORM === 'native'
       ? [['expo-dev-client', { launchMode: 'most-recent' }]]
       : []),
